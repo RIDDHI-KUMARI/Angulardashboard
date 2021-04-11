@@ -9,6 +9,7 @@
         <img src="assets/images/logo.png" alt="logo">
         <h1>Hard Cipher</h1>
     </div>
+    
     <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
       <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
         <ul>
@@ -16,28 +17,36 @@
             <a routerLink="/welcome">Welcome</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a>Human Resource</a>
+            <a>CRM</a>
+            <app-customer-relationshipmanagement></app-customer-relationshipmanagement>
           </li>
           <li nz-menu-item nzMatchRouter>
             <a>Inventory</a>
+            <app-inventory></app-inventory>
           </li>
           <li nz-menu-item nzMatchRouter>
             <a>Sales & Marketing</a>
+             <app-sales-marketing></app-sales-marketing>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a>Supply chain Management</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a>CRM</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a>Finance & Accounting</a>
-          </li>
-          <li nz-menu-item nzMatchRouter>
-            <a>Engineering/Production</a>
+            <a>SupplychainManagement</a>
+            <app-supplychainmanagement></app-supplychainmanagement>
           </li>
           <li nz-menu-item nzMatchRouter>
             <a>Purchase</a>
+              <app-purchase></app-purchase>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Human Resource</a>
+          <app-human-resource></app-human-resource>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Engineering/Production</a>
+              <app-engineering-production></app-engineering-production>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>Finance & Accounting</a>
+             <app-finance-accounting></app-finance-accounting>
           </li>
           <ul nz-submenu nzOpen nzTitle="Logout" nzIcon="logout"></ul>
         </ul>
@@ -61,4 +70,4 @@
       </div>
     </nz-content>
   </nz-layout>
-</nz-layout>
+
